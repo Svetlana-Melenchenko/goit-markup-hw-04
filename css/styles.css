@@ -1,0 +1,341 @@
+/*------ Змінні------*/
+:root {
+	--main-color: #434455;
+	--secondary-color: #2e2f42;
+	--contrasting-color: #ffffff;
+	--accent-color: #4d5ae5;
+	--lighting-color: #f4f4fd;
+
+	--bg-main-color: #ffffff;
+	--bg-accent-color: #e7e9fc;
+	--bg-modal-color: #fcfcfc;
+	--bg-hover-btn: #404bbf;
+}
+/*------ Загальні стилі------*/
+body {
+	background-color: var(--bg-main-color);
+	color: var(--main-color);
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	text-transform: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	width: 1158px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+	clip-path: inset(50%);
+}
+/* ------h2 */
+.section-title {
+	color: var(--secondary-color);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+}
+/* ------h3 */
+.subtitle {
+	color: var(--secondary-color);
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+/* ------Oписовий текст */
+.deck {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+}
+/* ------button */
+.btn {
+	border: none;
+	color: var(--contrasting-color);
+	font-weight: 500;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+}
+/* ----small text-- */
+.text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+.link {
+	text-decoration: none;
+}
+/*----- header -----*/
+.header {
+	border-bottom: 1px solid #e7e9fc;
+}
+.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-nav {
+	display: flex;
+	align-items: center;
+}
+.header-nav-list {
+	display: flex;
+	gap: 40px;
+}
+.header-list {
+	display: flex;
+	gap: 40px;
+}
+.header-contact {
+	font-style: normal;
+}
+.header-logo {
+	margin-right: 76px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+.header-logo,
+.footer-logo {
+	color: var(--accent-color);
+	font-weight: 800;
+	font-size: 18px;
+	font-family: "Raleway", sans-serif;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.header-logo-accent {
+	color: var(--secondary-color);
+}
+.header-nav-link {
+	display: inline-block;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	color: var(--secondary-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-list-link:hover,
+.header-list-link:focus {
+	color: var(--bg-hover-btn);
+}
+.header-list-link {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	color: var(--main-color);
+	font-style: normal;
+}
+/*------ footer------*/
+.footer {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: var(--secondary-color);
+}
+.footer-logo {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+.footer-logo-accent {
+	color: var(--lighting-color);
+}
+
+.footer-text {
+	max-width: 264px;
+	color: var(--lighting-color);
+}
+/*------ main------*/
+/*----- hero -----*/
+.hero {
+	padding: 188px 0;
+	background-color: var(--secondary-color);
+}
+.hero-title {
+	max-width: 496px;
+	margin: 0 auto;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+	text-align: center;
+	margin-bottom: 48px;
+}
+.hero-button {
+	display: block;
+	min-width: 169px;
+	height: 56px;
+	margin: 0 auto;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--accent-color);
+	cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+	background-color: var(--bg-hover-btn);
+}
+/*------ about------*/
+.about-list {
+	display: flex;
+	gap: 24px;
+}
+.about-list-item {
+	width: calc((100% - 72px) / 4);
+}
+.about-list-title {
+	margin-bottom: 8px;
+}
+/*------ work------*/
+.work {
+	padding-top: 0;
+}
+.work-title {
+	margin-bottom: 72px;
+	text-align: center;
+}
+.work-list {
+	display: flex;
+	gap: 24px;
+	background-color: var(--contrasting-color);
+}
+.work-lis-item {
+	width: calc((100% - 48px) / 3);
+}
+.work-lis-img {
+	display: block;
+}
+/*------ team------*/
+.team {
+	background-color: var(--lighting-color);
+}
+.team-title {
+	margin-bottom: 72px;
+	text-align: center;
+}
+.team-list {
+	display: flex;
+	gap: 24px;
+}
+.team-list-item {
+	width: calc((100% - 72px) / 4);
+	border-radius: 0px 0px 4px 4px;
+	background: #ffffff;
+	background-color: var(--contrasting-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+		0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.team-list-item:hover {
+	order: 1;
+}
+.tiam-content {
+	padding: 32px 16px;
+}
+.team-list-title {
+	margin-bottom: 8px;
+	text-align: center;
+}
+.team-list-title,
+.team-list-text {
+	text-align: center;
+}
+
+/*------ portfolio------*/
+.portfl {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
+.portfl-menu {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+	margin-bottom: 72px;
+}
+.portfl-btn {
+	padding: 12px 24px;
+	border: 1px solid var(--bg-accent-color);
+	border-radius: 4px;
+	background-color: var(--lighting-color);
+	color: var(--accent-color);
+	cursor: pointer;
+}
+.portfl-btn:hover,
+.portfl-btn:focus {
+	border: 1px solid transparent;
+	background-color: var(--bg-hover-btn);
+	color: var(--contrasting-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfl-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 48px;
+	column-gap: 24px;
+}
+.portfl-list-item {
+	width: calc((100% - 48px) / 3);
+}
+.portfl-content {
+	padding: 32px 16px;
+	border: 1px solid var(--bg-accent-color);
+	border-top: none;
+}
+.portfl-tetle {
+	margin-bottom: 8px;
+}
+.portfl-link-text {
+	color: #434455;
+}
