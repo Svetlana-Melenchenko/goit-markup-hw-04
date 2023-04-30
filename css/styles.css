@@ -10,6 +10,9 @@
 	--bg-accent-color: #e7e9fc;
 	--bg-modal-color: #fcfcfc;
 	--bg-hover-btn: #404bbf;
+	--bg-hero: rgba(46, 47, 66, 0.7);
+	--bg-acent:#31D0AA;
+	--light-slate:#8E8F99;
 }
 /*------ Загальні стилі------*/
 body {
@@ -117,6 +120,9 @@ img {
 /*----- header -----*/
 .header {
 	border-bottom: 1px solid #e7e9fc;
+	background-color: var(--bg-main-color);
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+		0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .item {
 	display: flex;
@@ -185,6 +191,16 @@ img {
 	padding-bottom: 100px;
 	background-color: var(--secondary-color);
 }
+.wrapper{
+	display: flex;
+	gap: 120px;
+}
+/* .footer-logo-block,
+.footer-social{
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 50%;
+} */
 .footer-logo {
 	display: inline-block;
 	margin-bottom: 16px;
@@ -197,22 +213,57 @@ img {
 	max-width: 264px;
 	color: var(--lighting-color);
 }
+.footer-social-title{
+	margin-bottom: 16px;
+	color: var(--bg-main-color);
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.footer-social-item {
+	display: flex;
+	gap:16px;
+	justify-content: center;
+	align-items: center;
+}
+.footer-social-list {
+}
+.footer-social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--bg-hover-btn);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+	background-color: var(--bg-acent);}
+.footer-social-icon {
+}
+
 /*------ main------*/
 /*----- hero -----*/
 .hero {
+	max-width: 1440px;
+	margin: 0 auto;
 	padding: 188px 0;
-	background-color: var(--secondary-color);
+	background-image: linear-gradient(var(--bg-hero), var(--bg-hero)), url(../images/main/hero/people-office.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .hero-title {
 	max-width: 496px;
 	margin: 0 auto;
+	margin-bottom: 48px;
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
 	text-align: center;
-	margin-bottom: 48px;
 }
 .hero-button {
 	display: block;
@@ -222,6 +273,7 @@ img {
 	border: none;
 	border-radius: 4px;
 	background-color: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
 }
 .hero-button:hover,
@@ -235,6 +287,16 @@ img {
 }
 .about-list-item {
 	width: calc((100% - 72px) / 4);
+}
+.about-svg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	border-radius: 4px;
+	background-color: var(--lighting-color);
 }
 .about-list-title {
 	margin-bottom: 8px;
@@ -279,7 +341,7 @@ img {
 		0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-list-item:hover {
-	order: 1;
+	 /* order: 1;  */
 }
 .tiam-content {
 	padding: 32px 16px;
@@ -292,7 +354,69 @@ img {
 .team-list-text {
 	text-align: center;
 }
+.team-list-text {
+	margin-bottom: 8px;
+}
 
+.team-social {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+	align-items: center;
+}
+.team-social-list {
+}
+.team-social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--bg-hover-btn);
+}
+.team-social-link:hover,
+.team-social-link:focus{
+	background-color: var(--bg-acent);
+}
+.team-social-icon {
+}
+
+
+/*------ customers------*/
+
+.customers {
+}
+.customers-title {
+	margin-bottom: 72px;
+	text-align: center;
+}
+.customers-item {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+	align-items: center;
+}
+.customers-list {
+	
+}
+.customers-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 32px;
+	border: 1px solid var(--light-slate);
+	border-radius: 4px;
+	color:var(--light-slate) ;
+}
+.customers-link:hover,
+.customers-link:focus {
+	border: 1px solid var(--bg-hover-btn);
+	color: var(--bg-hover-btn);
+}
+.customers-icon {
+	fill:currentColor
+}
 /*------ portfolio------*/
 .portfl {
 	padding-top: 96px;
@@ -327,6 +451,10 @@ img {
 }
 .portfl-list-item {
 	width: calc((100% - 48px) / 3);
+}
+.portfl-list-item:hover{
+	border: 1px solid #F4F4FD;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfl-content {
 	padding: 32px 16px;
