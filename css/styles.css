@@ -239,12 +239,13 @@ img {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	background-color: var(--bg-hover-btn);
+	background-color: var(--accent-color);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
 	background-color: var(--bg-acent);}
 .footer-social-icon {
+	fill: var(--lighting-color);
 }
 
 /*------ main------*/
@@ -458,6 +459,13 @@ img {
 	flex-wrap: wrap;
 	row-gap: 48px;
 	column-gap: 24px;
+}
+.portfl-list-link{
+	display: block; 
+}
+.portfl-list-link:hover,
+.portfl-list-link:focus{
+	box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfl-list-item {
 	width: calc((100% - 48px) / 3);
