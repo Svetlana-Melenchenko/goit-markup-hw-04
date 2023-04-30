@@ -343,8 +343,8 @@ img {
 .team-list-item:hover {
 	 /* order: 1;  */
 }
-.tiam-content {
-	padding: 32px 16px;
+.team-content {
+	padding: 32px 0;
 }
 .team-list-title {
 	margin-bottom: 8px;
@@ -377,9 +377,10 @@ img {
 }
 .team-social-link:hover,
 .team-social-link:focus{
-	background-color: var(--bg-acent);
+	background-color: var(--bg-hover-btn);
 }
 .team-social-icon {
+	fill: var(--lighting-color);
 }
 
 
